@@ -1,0 +1,33 @@
+### create user
+
+POST http://localhost:4000/register HTTP/1.1
+content-type: application/json
+
+{
+    "first_name":"mukama", 
+    "last_name":"asiimwe",
+    "phone_number":"+256-777-041-946",
+    "identification_number": "CM96062107CNXE",
+    "address":"wakiso",
+    "email":"muhereza@gmail.com",
+    "password":"Herman!2uf"
+}
+
+### login user
+
+POST http://localhost:4000/login HTTP/1.1
+content-type: application/json
+
+{
+    "email":"muhereza@gmail.com",
+    "password":"Herman!2uf"
+}
+
+### get posts
+
+POST http://localhost:4000/ HTTP/1.1
+content-type: application/json
+
+{
+  "Bearer Token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjMzZWFkMGQyZWIwZDE5YzlhMzI1NTNhIiwiZW1haWwiOiJtdWhlcmV6YUBnbWFpbC5jb20iLCJhZGRyZXNzIjoid2FraXNvIiwiaWF0IjoxNjY1MDU2OTA4LCJleHAiOjE2NjUwNTcyMDh9.JOFFxypknafhIKk0ZPQ8MHqRqMjmEy1pAw41recr01o"
+}

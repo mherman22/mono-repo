@@ -1,0 +1,32 @@
+{
+  "name": "authserver",
+  "version": "1.0.0",
+  "description": "user authentication and authorization using json-based authentication",
+  "main": "authServer.js",
+  "scripts": {
+    "start": "node authServer.js",
+    "dev:server": "nodemon authServer.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "auth",
+    "jwt",
+    "node",
+    "expressjs"
+  ],
+  "author": "mherman22",
+  "license": "ISC",
+  "dependencies": {
+    "@node-rs/bcrypt": "^1.6.1",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.6.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
